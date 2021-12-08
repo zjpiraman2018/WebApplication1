@@ -1,0 +1,202 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+.last-field {
+    padding-bottom: 80px !important;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 10rem;
+    height: 450px;
+    overflow-y: auto;
+    padding-bottom: 40px !important;
+    padding-top: 40px !important;
+}
+
+.field {
+    transform: scale(1);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+    transition: 0.5s ease all;
+}
+
+    .field label {
+        display: block;
+    }
+
+    .field input {
+    }
+
+    .field.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+
+
+
+
+
+.btn-toolbar > .btn-group > .btn {
+    width: 41px;
+    height: 44px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    margin-bottom: 0;
+    border: 1px solid #e8e9ea;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-image: none !important;
+    color: #575a5d;
+    background-color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    line-height: 21px;
+    position: relative;
+    transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+
+}
+
+
+
+
+.btn-toolbar > .btn-group > .btn.btn-default.active, .btn-toolbar > .btn-group > btn-complete.active,
+.btn-toolbar > .btn-group > btn-complete:active, .btn-toolbar > .btn-group > btn-complete:focus,
+.btn-toolbar > .btn-group > btn-complete:active:focus, .btn-toolbar > .btn-group > btn-complete:active:hover {
+    color: #fff;
+    background-color: #07c25f;
+    border-color: #07c25f;
+}
+
+.btn-toolbar > .btn-group > .btn:hover, .btn-toolbar > .btn-group > .btn:focus, .btn-toolbar > .btn-group > .btn:active, .btn-toolbar > .btn-group > .btn.active, .btn-toolbar > .btn-group > .btn.disabled, .btn-toolbar > .btn-group > .btn[disabled] {
+    box-shadow: none;
+}
+
+.btn-toolbar > .btn-group > .btn.active {
+    color: #fff;
+    background-color: #07c25f;
+    border-color: #07c25f;
+}
+
+.btn-toolbar {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* start */
+textarea {
+
+    min-height: 50px;
+    overflow:hidden;
+    resize:none;
+
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 10px 5px;
+    background: white no-repeat;
+    /*
+	* IMPORTANT PART HERE
+	*/
+    /* 2 imgs : 1px gray line (normal state) AND 2px green line (focus state) */
+    background-image: linear-gradient(to bottom, #1abc9c, #1abc9c), linear-gradient(to bottom, #e8e9ea, #e8e9ea);
+    /* sizes for the 2 images (default state) */
+    background-size: 0 2px, 100% 1px;
+    /* positions for the 2 images. Change both "50%" to "0%" or "100%" and tri again */
+    background-position: 50% 100%, 50% 100% !important;
+    /* animation solely on background-size */
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+}
+
+    textarea:focus {
+        /* sizes for the 2 images (focus state) */
+        background-size: 100% 2px, 100% 1px !important;
+        outline: none !important;
+    }
+
+
+
+
+.btn-badge {
+    background-color: #f5f6f7 !important;
+    border-color: rgba(87, 90, 93, 0.27) !important;
+    color: #18191a !important;
+    box-shadow: none;
+    border-radius: 2px !important;
+    background-color: #fafafa;
+    border: 1px solid rgba(87, 90, 93, 0.27);
+    color: #333;
+    margin-right: 10px;
+}
+
+
+div.btn-cons[btn-type=select] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: left !important;
+    width: 200px !important;
+}
+
+
+
+
+
+.tooltip.bs-tether-element-attached-top .tooltip-inner::before, .tooltip.tooltip-bottom .tooltip-inner::before {
+    border-bottom-color: #CD4945 !important;
+    z-index: 1 !important;
+}
+
+.popover.bs-tether-element-attached-top::after, .popover.popover-bottom::after {
+    top: -10px;
+    margin-left: -10px;
+    border-bottom-color: #CD4945 !important;
+    z-index: 1 !important;
+}
+
+.popover {
+    background-color: #CD4945 !important;
+    color: white !important;
+    left: -292px !important;
+    z-index : 1 !important;
+}
+
+
+[data-style=blur] + .popover{
+    opacity: 0.3 !important;
+}
+
+
+[data-style=primary] + .popover {
+    opacity: 1 !important;
+}
+
+
+.question-header{
+    font-weight:bold !important;
+    font-size: 16px !important;
+}
